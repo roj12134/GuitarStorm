@@ -6,6 +6,7 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -81,6 +82,9 @@
         </Property>
         <Property name="horizontalTextPosition" type="int" value="0"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel2MouseClicked"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JPanel" name="panelGame">
       <Properties>
@@ -126,7 +130,7 @@
         </Property>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JPanel() {&#xa;&#xa;    public void paintComponent (Graphics gio)&#xa;    {&#xa;        super.paintComponents(gio);&#xa;&#xa;        largo  = panelGame.getHeight();&#xa;&#xa;        gio.setColor(Color.WHITE);&#xa;        gio.fillRect(0, 0, panelGame.getHeight(), panelGame.getHeight());&#xa;&#xa;        gio.drawImage(Toolkit.getDefaultToolkit().getImage(System.getProperty(&quot;user.dir&quot;)+&quot;/src/Images/Fondo1.jpg&quot;), 0, 0, this);&#xa;&#xa;        // color amarillo&#xa;        gio.setColor(new Color(240,233,43));&#xa;        gio.drawRect(18*20,((panelGame.getHeight()/20)*18), 30, 30);&#xa;        // color rojo&#xa;        gio.setColor(new Color(226,4,4));&#xa;        gio.drawRect(14*20, ((panelGame.getHeight()/20)*18), 30, 30);&#xa;        // color azul&#xa;        gio.setColor(new Color(45,123,189));&#xa;        gio.drawRect(10*20, ((panelGame.getHeight()/20)*18), 30, 30);&#xa;        // color verde&#xa;        gio.setColor(new Color(137,206,37));&#xa;        gio.drawRect(6*20, ((panelGame.getHeight()/20)*18), 30, 30);&#xa;        // color anaranjado&#xa;        gio.setColor(new Color(245,104,37));&#xa;        gio.drawRect(2*20, ((panelGame.getHeight()/20)*18), 30, 30);&#xa;&#xa;        Draw(gio);&#xa;&#xa;        //--------------EVENTO QUE SE ACTIVA CUANDO EL TECLADO ES PRESIONADO&#xa;        a=false;&#xa;        s=false;&#xa;        d=false;&#xa;        f=false;&#xa;        g=false;&#xa;&#xa;        //-------------------------------&#xa;&#xa;        try {&#xa;&#xa;             Thread.sleep(0);&#xa;            repaint();&#xa;&#xa;        }&#xa;&#xa;        catch(InterruptedException e) {&#xa;&#xa;        }&#xa;&#xa;    }&#xa;}&#xa;"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new JPanel() {&#xa;&#xa;    public void paintComponent (Graphics gio)&#xa;    {&#xa;        super.paintComponents(gio);&#xa;&#xa;        largo  = panelGame.getHeight();&#xa;&#xa;        gio.setColor(Color.WHITE);&#xa;        gio.fillRect(0, 0, panelGame.getHeight(), panelGame.getHeight());&#xa;&#xa;        gio.drawImage(Toolkit.getDefaultToolkit().getImage(System.getProperty(&quot;user.dir&quot;)+&quot;/src/Images/Fondo1.jpg&quot;), 0, 0, this);&#xa;&#xa;        // color amarillo&#xa;        gio.setColor(new Color(240,233,43));&#xa;        gio.drawRect(18*20,((panelGame.getHeight()/20)*18), 30, 30);&#xa;        // color rojo&#xa;        gio.setColor(new Color(226,4,4));&#xa;        gio.drawRect(14*20, ((panelGame.getHeight()/20)*18), 30, 30);&#xa;        // color azul&#xa;        gio.setColor(new Color(45,123,189));&#xa;        gio.drawRect(10*20, ((panelGame.getHeight()/20)*18), 30, 30);&#xa;        // color verde&#xa;        gio.setColor(new Color(137,206,37));&#xa;        gio.drawRect(6*20, ((panelGame.getHeight()/20)*18), 30, 30);&#xa;        // color anaranjado&#xa;        gio.setColor(new Color(245,104,37));&#xa;        gio.drawRect(2*20, ((panelGame.getHeight()/20)*18), 30, 30);&#xa;&#xa;        Draw(gio);&#xa;&#xa;        //--------------EVENTO QUE SE ACTIVA CUANDO EL TECLADO ES PRESIONADO&#xa;        a=false;&#xa;        s=false;&#xa;        d=false;&#xa;        f=false;&#xa;        g=false;&#xa;&#xa;        //-------------------------------&#xa;&#xa;        try {&#xa;&#xa;            Thread.sleep(0);&#xa;            repaint();&#xa;&#xa;        }&#xa;&#xa;        catch(InterruptedException e) {&#xa;&#xa;        }&#xa;&#xa;    }&#xa;}&#xa;"/>
       </AuxValues>
 
       <Layout>
